@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Operações aleatórias</h1>
+    <section>
+        <p>
+            <h3>Digite os valores:</h3>
+        </p>
+        <p>
+            <input type="number" name="valor" id="valorRecebido1">
+        </p>
+        <p>
+            <input type="number" name="valor" id="valorRecebido2">
+        </p>
+        <p>
+            <h3>Escolha a operação:</h3>
+        </p>
+        <input type="radio" name="option" id="option1" checked>
+            <label for="soma">soma</label>
+        <input type="radio" name="option" id="optiuo2">
+            <label for="subtracao">Subtração</label>
+        <input type="radio" name="option" id="option3">
+            <label for="divisao">Divisão</label>
+        <input type="radio" name="option" id="option4">
+            <label for="mult">Multiplicação</label>
+        <p>
+            <input type="button" value="Calcular" onclick="operacao()">
+        </p>
+        <div class="result" id="res">
+            <h3>Será gerado uma tabuada do resultado...</h3>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

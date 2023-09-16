@@ -1,0 +1,13 @@
+body{
+    text-align: center;
+    background-color: rgb(216, 142, 240);
+}
+p{
+    font: normal 20pt italic;
+}
+h1{
+    font: normal 30pt italic;
+}
+input{
+    border-radius: 5px;
+}

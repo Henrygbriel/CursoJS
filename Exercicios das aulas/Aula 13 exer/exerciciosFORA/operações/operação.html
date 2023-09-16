@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>Calculo de números</h1>
+    <h3>Digite os numeros que voce deseja calcular</h3>
+    <p>
+        <input type="number" id="numero" name="numero">
+    </p>
+    <p>
+        <input type="number" id="numero2" name="numero">
+    </p>
+    <p>
+        <h3>Escolha a operação</h3></p>
+    <p>
+        <input type="radio" name="calc" id="soma" checked>
+        <label for="soma">Soma</label>
+        <input type="radio" name="calc" id="subtracão">
+        <label for="subtracao">Subtração</label>
+        <input type="radio" name="calc" id="divisao">
+        <label for="divisao">Divisão</label>
+        <input type="radio" name="calc" id="multiplicação">
+        <label for="multiplicação">Multiplicação</label>
+    </p>
+    <p>
+        <input type="button" onclick="calcular()" value="Calcular">
+    </p>
+    <div id="res">
+
+    </div>
+    <link rel="stylesheet" href="style.css">
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dinheiro</title>
+    <link rel="stylesheet" href="dinheiro.css">
+</head>
+<body>
+    <h1 class="titulo">Conversor de dolar</h1>
+    <p>
+        Digite o valor que deseja converter
+    </p>
+        <input type="number" id="valorDigitado">
+    <p>Converter para:</p>
+    <p>
+        <input type="radio" id="real" name="moeda" checked>
+        <label for="real">Real</label>
+        <input type="radio" id="euro" name="moeda">
+        <label for="euro">Euro</label>
+        <input type="radio" id="bitcoin" name="moeda">
+        <label for="bitcoin">Bitcoin</label>
+    </p>
+
+    <input type="button" onclick="converter()" value="Converter">
+    <p>
+        <div id="res">
+
+        </div>
+    </p>
+
+    <script src="script.js"></script>
+</body>
+</html>

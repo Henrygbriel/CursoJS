@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando Numeros</title>
+
+    <!--INICIO DO CSS-->
+    <style>
+        body{
+            font: normal 20pt Arial;
+        }
+        input {
+            font: normal 18pt Arial;
+            width: 100px;
+        }
+        div#resposta{
+            margin-top: 20px;
+        }
+        
+    </style>
+    <!--FIM DO CSS-->
+    
+</head>
+<body>
+
+    <!--HTML-->
+    <h1>Somando valores</h1>
+    <input type="number" name="txtn1" id="txtn1">
+    <input type="number" name="txtn2" id="txtn2">
+    <input type="button" value="Somar" onclick="somar()">
+    <div class="result" id="resposta">Resultado</div>
+    <!--HTML-->
+
+    <!--INICIO DO JAVA SCRIPT-->
+    <script>
+        function somar(){
+            var tn1 = document.getElementById("txtn1")//metodo usando ID
+            var tn2 = document.querySelector("input#txtn2")//Metodo usando querySelector
+            var resposta = document.getElementById("resposta")
+            var n1 = Number.parseInt(tn1.value)//converte o numero em inteiro
+            var n2 = Number.parseInt(tn2.value)//converte para inteiro
+
+            var soma = n1 + n2//operação de soma
+            //resposta.innerHTML = "A soma de " + n1 + " com " + n2 + " é " + soma//mostra o resultado da soma na tela usando a concatenação
+            resposta.innerHTML = `A soma de ${n1} com ${n2} é <strong>${soma}</strong>`//mostra o resultado da soma na tela usando o place holder
+        }
+    </script>
+    <!--FINAL DO JAVA SCRIPT-->
+
+</body>
+</html>

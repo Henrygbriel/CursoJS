@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            color: red;
+            background-color: black;
+        }
+        p{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sistema gringo ou nao KKKKK</h1>
+    Qual país voce mora <input type="text" name="brasil" id="pais">
+    Nacionalidade <input type="text" name="gringo" id="gringo">
+    <input type="button" value="verificar" onclick="veri()">
+    <div id="res">
+
+    </div>
+    <script>
+        function veri(){
+            var pais = document.getElementById("pais");
+            var gringo = document.getElementById("gringo");
+            var res = document.getElementById("res");
+            var PdePais = pais.value;
+            var GdeGringo = gringo.value;
+            res.innerHTML = `<p>Você mora no <strong>${PdePais}</strong></p>`;
+
+            if(GdeGringo != "brasileiro"){
+                res.innerHTML += "<p>Voce é Estrangeiro</p>";
+            }else{
+                res.innerHTML += "<p>Voce é Brasileiro</p>";
+            }
+        }
+    </script>
+</body>
+</html>
